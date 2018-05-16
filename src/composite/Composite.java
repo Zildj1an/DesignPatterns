@@ -1,10 +1,14 @@
 package composite;
 
-import java.util.List;
+import java.util.ArrayList;
 
-public class Composite extends Component{
+public class Composite implements Component{
 	
-	List<Component> sons;
+	private ArrayList<Component> sons;
+	
+	public Composite(){
+		sons = new ArrayList<Component>();
+	}
 
 	@Override
 	public void operation() {

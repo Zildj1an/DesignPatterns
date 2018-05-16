@@ -1,6 +1,6 @@
 package composite;
 
-public class Leaf extends Component{
+public class Leaf implements Component{
 
 	private String _name;
 	

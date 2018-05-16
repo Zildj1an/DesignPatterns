@@ -1,6 +1,6 @@
 package composite;
 
-public abstract class Component {
+public interface Component {
 
 	public abstract void operation();
 	
