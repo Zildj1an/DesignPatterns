@@ -22,5 +22,5 @@ public class Games2D implements GameIterator{
 	public Iterator<Game> getIterator() {
 		return Arrays.asList(games2D).iterator();
 	}
-
 }
+

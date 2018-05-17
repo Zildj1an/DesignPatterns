@@ -23,16 +23,18 @@ public class Test {
 		System.out.println("2D GAMES \n");
 		Iterator<Game> i2 = games2d.getIterator();
 		iterate(i2);
-		ESTO FALLA
+
 	}
 
 	private static void iterate(Iterator<Game> i2) {
 		Game g;
 		while(i2.hasNext()){
 			g = (Game) i2.next();
-			System.out.println(g.getName());
-			System.out.println("Year Of Release: " + g.getYear());
+				if(g != null){
+					System.out.println(g.getName());
+					System.out.println("Year Of Release: " + g.getYear());
+				}
 		}
-		
+		System.out.println("---------------");
 	}
 }
